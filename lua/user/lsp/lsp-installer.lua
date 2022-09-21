@@ -12,6 +12,8 @@ local servers = {
   "bashls",
   "jsonls",
   "yamlls",
+  "golangci_lint_ls",
+  "gopls"
 }
 
 lsp_installer.setup()
