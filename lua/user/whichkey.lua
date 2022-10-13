@@ -144,6 +144,10 @@ local mappings = {
       "<cmd>lua vim.lsp.diagnostic.goto_next()<CR>",
       "Next Diagnostic",
     },
+    h = {
+      "<cmd>lua vim.lsp.buf.hover()<cr>",
+      "Hover action",
+    },
     k = {
       "<cmd>lua vim.lsp.diagnostic.goto_prev()<cr>",
       "Prev Diagnostic",
