@@ -13,7 +13,10 @@ local servers = {
   "jsonls",
   "yamlls",
   "golangci_lint_ls",
-  "gopls"
+  "gopls",
+  "groovyls",
+  "jsonls",
+  "yamlls",
 }
 
 lsp_installer.setup()
@@ -39,6 +42,12 @@ for _, server in pairs(servers) do
   if server == "pyright" then
     local pyright_opts = require "user.lsp.settings.pyright"
     opts = vim.tbl_deep_extend("force", pyright_opts, opts)
+  end
+
+  if server == "groovyls" then
+    local groovyls_opts = require "user.lsp.settings.groovyls"
+    opts = vim.tbl_deep_extend("force", groovyls_opts, opts)
+    vim.inspect(opts)
   end
 
   lspconfig[server].setup(opts)
