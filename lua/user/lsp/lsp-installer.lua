@@ -47,6 +47,11 @@ for _, server in pairs(servers) do
   if server == "groovyls" then
     local groovyls_opts = require "user.lsp.settings.groovyls"
     opts = vim.tbl_deep_extend("force", groovyls_opts, opts)
+  end
+
+  if server == "tsserver" then
+    local tsserver_opts = require "user.lsp.settings.tsserver"
+    opts = vim.tbl_deep_extend("force", tsserver_opts, opts)
     vim.inspect(opts)
   end
 
