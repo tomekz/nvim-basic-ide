@@ -59,7 +59,8 @@ return packer.startup(function(use)
   use { "tpope/vim-surround" }
   use { "folke/which-key.nvim" }
   use { "github/copilot.vim"}
-  use { "christoomey/vim-tmux-navigator" } 
+  use { "christoomey/vim-tmux-navigator", commit="c2dab18" } 
+  use { "simrat39/inlay-hints.nvim"}
 
   -- Colorschemes
   use { "folke/tokyonight.nvim", commit = "8223c970677e4d88c9b6b6d81bda23daf11062bb" }

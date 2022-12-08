@@ -69,5 +69,8 @@ nvim_tree.setup {
     custom = {
       "^.git$", -- git files 
     }
+  },
+  live_filter = {
+    always_show_folders = false
   }
 }
