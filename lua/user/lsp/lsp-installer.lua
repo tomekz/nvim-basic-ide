@@ -10,7 +10,6 @@ local servers = {
   "tsserver",
   "pyright",
   "bashls",
-  "jsonls",
   "yamlls",
   "golangci_lint_ls",
   "gopls",
@@ -44,6 +43,11 @@ for _, server in pairs(servers) do
     opts = vim.tbl_deep_extend("force", pyright_opts, opts)
   end
 
+  if server == "gopls" then
+    local gopls_opts = require "user.lsp.settings.gopls"
+    opts = vim.tbl_deep_extend("force",gopls_opts , opts)
+  end
+
   if server == "groovyls" then
     local groovyls_opts = require "user.lsp.settings.groovyls"
     opts = vim.tbl_deep_extend("force", groovyls_opts, opts)
@@ -52,7 +56,6 @@ for _, server in pairs(servers) do
   if server == "tsserver" then
     local tsserver_opts = require "user.lsp.settings.tsserver"
     opts = vim.tbl_deep_extend("force", tsserver_opts, opts)
-    vim.inspect(opts)
   end
 
   lspconfig[server].setup(opts)

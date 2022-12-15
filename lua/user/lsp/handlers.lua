@@ -76,6 +76,18 @@ M.on_attach = function(client, bufnr)
     client.resolved_capabilities.document_formatting = false
   end
 
+  if client.name == "gopls" then
+    local status_ok, inlay_hints = pcall(require, "inlay-hints")
+    if not status_ok then
+       return
+    end
+      inlay_hints.on_attach(client, bufnr)
+  end
+
+  if client.name == "sumneko_lua" then
+    client.resolved_capabilities.document_formatting = false
+  end
+
   if client.name == "sumneko_lua" then
     client.resolved_capabilities.document_formatting = false
   end
@@ -86,6 +98,9 @@ M.on_attach = function(client, bufnr)
     return
   end
   illuminate.on_attach(client)
+
+
+
 end
 
 return M

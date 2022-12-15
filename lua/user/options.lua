@@ -43,6 +43,8 @@ vim.opt.whichwrap:append("<,>,[,],h,l")
 vim.opt.iskeyword:append("-")
 vim.opt.foldmethod = "indent"
 vim.opt.foldlevel = 99
+vim.opt.path:append("**")
+vim.opt.wildmenu = true
 -- Ignore files
 vim.opt.wildignore:append("node_modules")
 vim.opt.wildignore:append("*/node_modules/*")

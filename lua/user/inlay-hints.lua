@@ -7,5 +7,5 @@ inlay_hints.setup {
     only_current_line = true,
     eol = {
       right_aligned = true,
-    }
+    },
   }
