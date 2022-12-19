@@ -16,6 +16,7 @@ local servers = {
   "groovyls",
   "jsonls",
   "yamlls",
+  "terraformls",
 }
 
 lsp_installer.setup()

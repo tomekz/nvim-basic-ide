@@ -21,10 +21,10 @@ vim.opt.undofile = true                         -- enable persistent undo
 vim.opt.updatetime = 300                        -- faster completion (4000ms default)
 vim.opt.writebackup = false                     -- if a file is being edited by another program (or was written to file while editing with another program), it is not allowed to be edited
 vim.opt.expandtab = true                        -- convert tabs to spaces
-vim.opt.shiftwidth = 4                          -- the number of spaces inserted for each indentation
-vim.opt.softtabstop = 4                         -- sets a numer of columns for a tab
-vim.opt.tabstop = 4                             -- insert 4 spaces for a tab
-vim.opt.tabstop = 4                             -- insert 4 spaces for a tab
+vim.opt.shiftwidth = 2                          -- the number of spaces inserted for each indentation
+vim.opt.softtabstop = 2                         -- sets a numer of columns for a tab
+vim.opt.tabstop = 2                             -- insert # spaces for a tab
+vim.opt.tabstop = 2                             -- insert # spaces for a tab
 vim.opt.cursorline = true                       -- highlight the current line
 vim.opt.relativenumber = true                   -- set relative numbered lines
 vim.opt.number = true                           -- set numbered lines
@@ -44,9 +44,13 @@ vim.opt.iskeyword:append("-")
 vim.opt.foldmethod = "indent"
 vim.opt.foldlevel = 99
 vim.opt.path:append("**")
-vim.opt.wildmenu = true
 -- Ignore files
-vim.opt.wildignore:append("node_modules")
-vim.opt.wildignore:append("*/node_modules/*")
-vim.opt.wildignore:append("*/build/*")
-vim.opt.wildignore:append("*/dist/*")
+vim.opt.wildmenu = true
+vim.opt.wildignore:append({
+                "***/flow-typed/*",
+                "***/node_modules/*",
+                "***/build/*"
+})
+-- vim.opt.wildignore:append()
+-- vim.opt.wildignore:append("***/build/*")
+-- vim.opt.wildignore:append("***/dist/*")
