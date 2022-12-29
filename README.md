@@ -133,7 +133,6 @@ You can install new plugins here: [plugins](https://github.com/LunarVim/nvim-bas
 - [vim-bbye](https://github.com/moll/vim-bbye)
 - [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
 - [toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim)
-- [project.nvim](https://github.com/ahmedkhalf/project.nvim)
 - [impatient.nvim](https://github.com/lewis6991/impatient.nvim)
 - [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)
 - [alpha-nvim](https://github.com/goolord/alpha-nvim)
