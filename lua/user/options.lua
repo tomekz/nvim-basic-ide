@@ -47,9 +47,9 @@ vim.opt.path:append("**")
 -- Ignore files
 vim.opt.wildmenu = true
 vim.opt.wildignore:append({
-                "***/flow-typed/*",
-                "***/node_modules/*",
-                "***/build/*"
+                "**/flow-typed/**",
+                "**/node_modules/**",
+                "**/build/**"
 })
 -- vim.opt.wildignore:append()
 -- vim.opt.wildignore:append("***/build/*")

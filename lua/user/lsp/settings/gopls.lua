@@ -2,7 +2,7 @@ return {
     settings = {
         gopls = {
             gofumpt = true,
-            hints = {
+            -- hints = {
                 -- assignVariableTypes = true,
                 -- compositeLiteralFields = true,
                 -- compositeLiteralTypes = true,
@@ -10,7 +10,7 @@ return {
                 -- functionTypeParameters = true,
                 -- parameterNames = true,
                 -- rangeVariableTypes = true,
-            },
+            -- },
         },
     },
     flags = {
