@@ -55,19 +55,16 @@ return packer.startup(function(use)
   use { "lewis6991/impatient.nvim", commit = "969f2c5c90457612c09cf2a13fee1adaa986d350" }
   use { "lukas-reineke/indent-blankline.nvim", commit = "6177a59552e35dfb69e1493fd68194e673dc3ee2" }
   use { "goolord/alpha-nvim", commit = "ef27a59e5b4d7b1c2fe1950da3fe5b1c5f3b4c94" }
-  use { "tpope/vim-surround" }
-  use { "folke/which-key.nvim" }
+  use { "tpope/vim-surround", commit = "3d188ed2113431cf8dac77be61b842acb64433d9" }
+  use { "folke/which-key.nvim", commit = "86a58eac6a3bc69f5aa373b29df993d14fda3307" }
   use { "github/copilot.vim"}
   use { "christoomey/vim-tmux-navigator", commit="c2dab18" } 
-  use { "simrat39/inlay-hints.nvim"}
 
   -- Colorschemes
   use { "folke/tokyonight.nvim", commit = "8223c970677e4d88c9b6b6d81bda23daf11062bb" }
   use { "lunarvim/darkplus.nvim", commit = "2584cdeefc078351a79073322eb7f14d7fbb1835" }
-  use { "xiyaowong/nvim-transparent"}
-  use { "morhetz/gruvbox"}
-  use({ 'rebelot/kanagawa.nvim', commit = 'fc2e308' })
-  use "savq/melange"
+  use { "xiyaowong/nvim-transparent", commit = "1a3d7d3b7670fecbbfddd3fc999ddea5862ac3c2"}
+  use { "morhetz/gruvbox", commit = "bf2885a95efdad7bd5e4794dd0213917770d79b7"}
 
   -- cmp plugins
   use { "hrsh7th/nvim-cmp", commit = "df6734aa018d6feb4d76ba6bda94b1aeac2b378a" } -- The completion plugin
@@ -97,11 +94,11 @@ return packer.startup(function(use)
   }
 
   -- Go
-  use { "fatih/vim-go" }
+  use { "fatih/vim-go", commit = "8d7677947e0be1eecfa1bcf2c1148804963ec4f6" }
 
   -- Git
   use { "lewis6991/gitsigns.nvim", commit = "c18e016864c92ecf9775abea1baaa161c28082c3" }
-  use { "tpope/vim-fugitive" }
+  use { "tpope/vim-fugitive", commit = "5b0b138483de17a8fd8dfcec0b491782c8fbf102" }
 
   -- DAP
   use { "mfussenegger/nvim-dap", commit = "014ebd53612cfd42ac8c131e6cec7c194572f21d" }
