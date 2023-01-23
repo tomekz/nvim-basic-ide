@@ -37,6 +37,8 @@ vim.opt.wrap = false                            -- display lines as one long lin
 vim.opt.scrolloff = 8                           -- is one of my fav
 vim.opt.sidescrolloff = 8
 vim.opt.guifont = "monospace:h17"               -- the font used in graphical neovim applications
+vim.opt.autoindent = true                       -- copy indent from current line when starting a new line
+vim.opt.smartindent = true                      -- make indenting smarter again
 vim.opt.fillchars.eob=" "
 vim.opt.shortmess:append "c"
 vim.opt.whichwrap:append("<,>,[,],h,l")
@@ -49,7 +51,9 @@ vim.opt.wildmenu = true
 vim.opt.wildignore:append({
                 "**/flow-typed/**",
                 "**/node_modules/**",
-                "**/build/**"
+                "**/build/**",
+                "**/dist/**",
+
 })
 -- vim.opt.wildignore:append()
 -- vim.opt.wildignore:append("***/build/*")

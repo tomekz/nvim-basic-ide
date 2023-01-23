@@ -42,6 +42,7 @@ keymap("n", "<S-q>", "<cmd>Bdelete!<CR>", opts)
 keymap("v", "p", '"_dP', opts)
 
 -- use blackhole register for yank
+keymap("n", "C", '"_C', opts)
 keymap("n", "c", '"_c', opts)
 keymap("n", "d", '"_d', opts)
 
